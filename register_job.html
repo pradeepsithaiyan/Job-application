@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Job</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="signup.html">Sign Up/Login</a></li>
+            <li><a href="register_job.html">Register Job</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Register a Job</h1>
+        <form id="jobForm" enctype="multipart/form-data">
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle" required>
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" required>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            <label for="description">Job Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <label for="qualification">Qualification (e.g., B.E):</label>
+            <input type="text" id="qualification" name="qualification" required>
+            <label for="experience">Experience (years):</label>
+            <input type="number" id="experience" name="experience" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br>
+            <br><button type="submit">Register Job</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
